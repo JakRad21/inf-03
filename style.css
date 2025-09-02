@@ -1,0 +1,38 @@
+body{
+    background-color: #2f3c50;
+    margin: 0;
+}
+*{
+    color: #b6bdcc;
+    margin-left: 12px;
+    margin-right: 12px;
+}
+.title{
+    font-size: 36pt;
+}
+p, li, code{
+    font-size: 14pt;
+}
+pre, code, html, span{
+    margin: 0;
+}
+pre{
+    color: white;
+    height: fit-content;
+    width: fit-content;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 2%;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    background-color: #212a37;
+}
+.blu{
+    color: #3a8cd6;
+}
+.cyn{
+    color: #9cdcfe;
+}
+.org{
+    color: #ce916c;
+}
