@@ -7,36 +7,123 @@
     <title>Poradnik inf 03</title>
 </head>
 <body>
-    <h1 class="title">(Prawie) wszystko co musisz wiedzieć przed egzaminem INF 03</h1>
+    <h1 class="title">Materiały do zdania INF 03</h1>
     <h1>Spis treści</h1>
     <h1>Wprowadzenie</h1>
     <p>Każdy z głównych języków programowania będzie podzielony na dwie sekcje - fundamenty i rzadsze przypadki. <br>
-        Fundamentami są rzeczy potrzebne na prawie każdym egzaminie, bez których wiedzy będzie ciężko liczyć na pozytywny wynik.<br>
-        Rzadsze przypadki to wiedza, która pojawiła/pojawia się na egzaminach, ale nie jest częstym widokiem. Zdanie bez tej wiedzy jest możliwe, aczkolwiek bardzo ryzykowne. <br>
-        Na pojedynczym egzaminie jest około 1-3 z tych tematów. <br><br>
+        Fundamentami są rzeczy które albo często pojawiają się na egzamnach, albo bez ich zrozumienia nie da się wytłumaczyć rzeczy bardziej złożonych.<br>
+        Rzadsze przypadki to wiedza, która pojawiła się tylko raz lub kilka razy.<br><br>
         UWAGI:
         <ul>
-            <li>CKE ostatnio tworzy cięższe egzaminy niż zazwyczaj, więć mogą tam być rzeczy których nikt się nie spodziewa i nie są pokryte tutaj</li>
-            <li>Poza kilkoma nielicznymi wyjątkami wszystko tutaj opisane pojawiło się chociażby raz na egzaminie, więc nie ma tutaj żadnych rzecy spoza egzaminu.<br>
-          Minusem tego jest jeszcze raz, że jeśli CKE zrobi akrusz z czymś czego jeszcze nigdy nie było, nie jest to wspomniane tutaj i musisz szukać informacji gdzie idziej</li>
-          <li>Informacje przydatne tylko na teorię będą zaznaczone symbloem (T), ale nie będzie ich dużo ponieważ częśc teoretyczna egzaminu będzie miała swój własny rozdział</li>
+            <li>Każdy egazmin i jego rozwiązanie jest udostępniane publicznie na githubie Chr1skyy - <a href="https://chr1skyy.github.io/EgzaminZawodowyINF03-Wyszukiwarka/">Link</a></li>
+            <li>NIE używaj tego jako jedynego źródła informacji. Jest tu tylko i wyłącznie opisane to co pojawiło się do tej pory na egzaminach CKE, ale nie ma tutaj żadnych dodatykowych informacji.
+            <br>Jeżeli CKE zada coś czego do tej pory nigdy nie było, nie będzie to tutaj opisane. </li>
+            <li>Podaje informacje w taki sposób, aby można było nauczyć się wszystkiego od zera, ale zalecam dowiedzieć się podstaw z innych miejsc, ponieważ nie jestem zbyt dobry w tłumaczeniu czegoś od początku. <br>
+                Nazwał bym to bardziej przypominajką i listą wszystkiego co do tej pory było na egzaminach, a nie wyczerpującym poradnikiem</li>
+          <li>Cyfry zapisane na zielono zaznaczają fragmenty kodu by łatwiej przkeazać wiedzę</li>
           <li>Sekcja grafiki jest ważna, pomimo że jest na samym dole cześci praktycznej</li>
         </ul></p>
         <h1 class="title">Część praktyczna</h1>
+    <h1>Wstęp</h1>
+    <p>Kilka uwag specyficznych do części praktycznej. Na napisanie egzaminu jest przenzczone 150 minute (2,5 godziny). <br>
+        Zależnie od wymagań egzaminu, na dole w obramówce jest mała ściąga z języka javascript albo php, oraz cięższych funkcji html i css, jeśli takie wystąpią.<br>
+        Jeśli zapomnisz jak nazywa się jakiś znazcnik bądź komenda, nie panikuj. Visual Studio Code autouzupełnia wszystko co piszesz, <br>
+        więc możesz wpisać przykładowo jedna literę, i przeszukiwać listę znaczników na tą literę, dopóki nie znajdziesz tego czego szukasz.<br>
+        Ważne do zapamiętania jest też, że nazwy wszystkiego nie biorą się losowo, tylko z języka angielskiego. Tłumacząc to czego szukasz na angielski i czasami skracanie słow do liter może pomóc w znalezieniu brakującego elementu.<br>
+        Dla przykładu masz zrobić listę uporządkowaną w HTML, ale nie pamiętsz nazw znaczników. Lista uporządkowana to po angielsku "ordered list", robiąc z tego skrót wychodi "ol", <br>
+        co jest nazwą znacznika. Wewnątrz tego potrzebujesz elementów tej listy, więc znowu tłumaczysz element listy na "list element", skracasz do "le", co tym razem nie jest poprawne.<br>
+        Wpisujesz więc samo l do Visuala i szukasz po znacznikach zaczynających się na l. Tam znajdziesz "li", które jest poprawnym znazcnikiem elementu listy.<br>
+        Jeszcze jedną przydatną metodą jest folder contrib (i pare innych plików folderu programu xampp), w którym w plikach .php są małe kawałki kodu, które mogą pomóc jeśli zapomnisz składni języka php albo niektórych znaczników HTML <br>
+    </p>
     <h1>HTML - fundamenty</h1>
-    <p>Zanim zaczniesz robić cokolwiek w HTML, zacznij od wpisania wykrzyknika "!" i wciśniecia enter, utworzy to całą podstawową strukture strony</p>
+    <h2>Wstęp</h2>
+    <p>Język HTML składa się głównie ze znaczników takich jak ten</p>
+
+    <code><pre>&lt;<span class="blu">head</span>&gt;</pre></code>
+    
+    <p>To one definiują w jaki sposób tekst, obrazy itd. są pokazywane na stronie. Każdy znacznik trzeba też zamknąć (visual studio code automatycznie zamyka je za ciebie). <br>
+    Aby zamknąć znacznik trzeba zapisać go drugi raz, ale przed nazwą wpisac ukośnik.
+    </p>
+    <code><pre>&lt;<span class="blu">head</span>&gt;    &lt;/<span class="blu">head</span>&gt;</pre></code>
+    
+    <p>Można o nich myśleć jako o blokach z własnymi właściwościami, w których przchowywane są inne bloki albo tekst. </p><br>
+
+    <p>Uważaj na kolejnośc w której zamykasz znaczniki i zamykaj je w odwrotnej kolejności od tej, w jakiej zostały otwarte, ponieważ może to prowadzić do dziwnych błędów.<br> Niepoprawne:</p>
+    <code><pre>&lt;<span class="blu">body</span>&gt;&lt;<span class="blu">p</span>&gt;    &lt;/<span class="blu">body</span>&gt;&lt;/<span class="blu">p</span>&gt;</pre></code>
+    <p>Poprawne</p>
+    <code><pre>&lt;<span class="blu">body</span>&gt;&lt;<span class="blu">p</span>&gt;    &lt;/<span class="blu">p</span>&gt;&lt;/<span class="blu">body</span>&gt;</pre></code>
+    <p>Niektóre znaczniki mają również atrybuty (kolor jasnoniebieski) które nadają właściwości znacznikowi albo przechowują informacje. 
+        Większość atrybutów ma do siebie przypisaną wartość (kolor pomarańczowy), która jest owinięta cudzysłowiem. Przykład:
+    </p>
+    <code><pre>&lt;<span class="blu">a</span> <span class="cyn">href</span>=<span class="org">"https://google.com"</span>&gt;Kliknij&lt;/<span class="blu">a</span>&gt;</pre></code>
+    <p>W tym wypadku atrybut href wskazuje stronę, do której ma przenosić link.</p>
+    <p>Zanim zaczniesz robić cokolwiek w HTML, zacznij od wpisania wykrzyknika "!" i wciśniecia enter, utworzy to całą podstawową strukture strony na której będziemy pracować.</p>
     <code><pre>
 &lt;!<span class="blu">DOCTYPE</span> <span class="cyn">html</span>&gt;
-&lt;<span class="blu">html</span> <span class="cyn">lang</span>=<span class="org">"en"</span>&gt;
+&lt;<span class="blu">html</span> <span class="cyn">lang</span>=<span class="org">"en"</span>&gt; <span class="grn">[1]</span>
 &lt;<span class="blu">head</span>&gt;
-    &lt;<span class="blu">meta</span> <span class="cyn">charset</span>=<span class="org">"UTF-8"</span>&gt;
+    &lt;<span class="blu">meta</span> <span class="cyn">charset</span>=<span class="org">"UTF-8"</span>&gt; <span class="grn">[2]</span>
     &lt;<span class="blu">meta</span> <span class="cyn">name</span>=<span class="org">"viewport"</span> <span class="cyn">content</span>=<span class="org">"width=device-width, initial-scale=1.0"</span>&gt;
-    &lt;<span class="blu">title</span>&gt;Document&lt;/<span class="blu">/title</span>&gt;
+    &lt;<span class="blu">title</span>&gt;Document&lt;/<span class="blu">/title</span>&gt; <span class="grn">[3]</span>
 &lt;/<span class="blu">head</span>&gt;
 &lt;<span class="blu">body</span>&gt;
-
+<span class="grn">[4]</span>
 &lt;/<span class="blu">body</span>&gt;
-&lt;/<span class="blu">html</span>&gt;
-</pre></code>
+&lt;/<span class="blu">html</span>&gt;</pre></code>
+
+    <p>Tutaj do zdobycią są już dwa darmowe punkty!<br>
+        [1] - Zawsze (chyba że arkusz mówi inaczej) należy zamienić "en" na "pl", to ustawi język strony na polski<br>
+        [2] - Jest to polski standard kodowania znaków, nie zmieniaj go<br>
+        [3] - Tytuł strony (jaki napis ma karta w przeglądarce)<br>
+        [4] - Wewnątrz znacznika body zapisujemy wszystko, co chcemy żeby pojawiło sie na stronie
+    </p><br>
+<h2>Podstawowe znaczniki</h2>
+<p>Kilka znaczników, bez których nie można prejść dalej. Zachęcam do wypróbowania ich samemu, żeby wyczuć jak działają:</p>
+<br>
+<h3>&lt;<span class="blu">p</span>&gt; - paragraf (Paragraph)</h3>
+    <p>Podstawowa forma wyświetlenia tekstu</p>
+<code><pre>&lt;<span class="blu">p</span>&gt;Tekst&lt;/<span class="blu">p</span>&gt;</pre></code>
+<p>Tekst</p>
+<br>
+<h3>&lt;<span class="blu">br</span>&gt; - odstęp w tekście (BReak line)</h3>
+    <p>Tworzy pustą linię która służy do oddzielania tekstu w np. paragrafie (tego znacznika się nie zamyka)</p>
+    <code><pre>&lt;<span class="blu">p</span>&gt;Linia1&lt;<span class="blu">br</span>&gt;Linia2&lt;/<span class="blu">p</span>&gt;</pre></code>
+<p>Linia1 <br> Linia2</p>
+<br>
+<h3>&lt;<span class="blu">hr</span>&gt; - Linia horyzontalna (HoRizontal line)</h3>
+    <p>Tworzy oddzielającą linię od lewej do prawej ekranu (tego znacznika się nie zamyka)</p>
+    <code><pre>&lt;<span class="blu">hr</span>&gt;</pre></code>
+<hr>
+<br>
+<h3>&lt;<span class="blu">b</span>&gt; - pogrubienie (Bold)</h3>
+    <p>Pogrubia tekst wewnątrz</p>
+    <code><pre>&lt;<span class="blu">p</span>&gt;Ten tekst jest &lt;<span class="blu">b</span>&gt;pogrubiony&lt;/<span class="blu">b</span>&gt;&lt;/<span class="blu">p</span>&gt;</pre></code>
+<p>Ten tekst jest <b>pogrubiony</b></p>
+<br>
+<h3>&lt;<span class="blu">i</span>&gt; - pochylenie (Italic)</h3>
+    <p>Pochyla tekst wewnątrz</p>
+    <code><pre>&lt;<span class="blu">p</span>&gt;Ten tekst jest &lt;<span class="blu">i</span>&gt;pochylony&lt;/<span class="blu">i</span>&gt;&lt;/<span class="blu">p</span>&gt;</pre></code>
+<p>Ten tekst jest <i>pochylony</i></p>
+<br>
+<h3>&lt;<span class="blu">u</span>&gt; - pokreślenie (Underscored)</h3>
+    <p>Podkreśla tekst wewnątrz</p>
+    <code><pre>&lt;<span class="blu">p</span>&gt;Ten tekst jest &lt;<span class="blu">u</span>&gt;podkreślony&lt;/<span class="blu">u</span>&gt;&lt;/<span class="blu">p</span>&gt;</pre></code>
+<p>Ten tekst jest <u>podkreślony</u></p>
+<br>
+<h3>&lt;<span class="blu">s</span>&gt; - przkreślenie (Striked)</h3>
+    <p>Przekreśla tekst wewnątrz</p>
+    <code><pre>&lt;<span class="blu">p</span>&gt;Ten tekst jest &lt;<span class="blu">s</span>&gt;przekreślony&lt;/<span class="blu">s</span>&gt;&lt;/<span class="blu">p</span>&gt;</pre></code>
+<p>Ten tekst jest <s>przekreślony</s></p>
+<br>
+<h3>&lt;<span class="blu">a</span>&gt; - odnośnik (Anchor)</h3>
+    <p>Tworzy odnośnik do strony internetowej lub pliku na systemie. Ten znacznik musi posiadać atrybut href, który wskazuje gdzie odnośnik prowadzi.</p>
+    <code><pre>&lt;<span class="blu">a</span> <span class="cyn">href</span>=<span class="org">"https://google.com"</span>&gt;Link&lt;/<span class="blu">a</span>&gt;</pre></code>
+    <p><a href="https://google.com">Link</a></p>
+    <code><pre>&lt;<span class="blu">a</span> <span class="cyn">href</span>=<span class="org">"plik.html"</span>&gt;Link&lt;/<span class="blu">a</span>&gt;</pre></code>
+    <p><a href="plik.html">Link</a>   (ten link odnosi się do pliku znajdującego się w tym samym folderze, co ta strona)</p>
+    <p>Występuje też opcjonalny atrybut target, który decyduje w jaki sposób odnośnik zostanie otwarty. Ustawienie target na _blank sprawi, że link otworzy się w nowej karcie</p>
+    <code><pre>&lt;<span class="blu">a</span> <span class="cyn">href</span>=<span class="org">"https://google.com"</span> <span class="cyn">target</span>=<span class="org">"_blank"</span>&gt;Link&lt;/<span class="blu">a</span>&gt;</pre></code>
+    <p><a href="https://google.com" target="_blank">Link</a></p>
+
 </body>
 </html>
