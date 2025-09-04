@@ -4,14 +4,16 @@ body{
 }
 *{
     color: #b6bdcc;
-    margin-left: 12px;
-    margin-right: 12px;
+    font-family: Tahoma
 }
 .title{
     font-size: 36pt;
 }
+p{
+    margin-left: 12px;
+}
 p, li, code{
-    font-size: 14pt;
+    font-size: 13pt;
 }
 pre, code, html, span{
     margin: 0;
@@ -35,4 +37,7 @@ pre{
 }
 .org{
     color: #ce916c;
+}
+.grn{
+    color: #6a9955;
 }
