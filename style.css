@@ -18,7 +18,18 @@ p, li, code{
 pre, code, html, span{
     margin: 0;
 }
+table, tr, th, td{
+    border: 2px solid #000000;
+    border-collapse: collapse;
+}
+td, th{
+    padding: 5px;
+}
+table{
+    margin-top: 2vh;
+}
 pre{
+    font-family: Consolas, 'Courier New', monospace;
     color: white;
     height: fit-content;
     width: fit-content;
