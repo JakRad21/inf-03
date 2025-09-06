@@ -10,7 +10,7 @@
     <h1 class="title">Materiały do zdania INF 03</h1>
     <h1>Spis treści</h1>
     <h1>Wprowadzenie</h1>
-    <p>Każdy z głównych języków programowania będzie podzielony na dwie sekcje - fundamenty i rzadsze przypadki. <br>
+    <p>Każdy z potrzebnych języków programowania będzie podzielony na dwie sekcje - fundamenty i rzadsze przypadki. <br>
         Fundamentami są rzeczy które albo często pojawiają się na egzamnach, albo bez ich zrozumienia nie da się wytłumaczyć rzeczy bardziej złożonych.<br>
         Rzadsze przypadki to wiedza, która pojawiła się tylko raz lub kilka razy.<br><br>
         UWAGI:
@@ -18,8 +18,6 @@
             <li>Każdy egazmin i jego rozwiązanie jest udostępniane publicznie na githubie Chr1skyy - <a href="https://chr1skyy.github.io/EgzaminZawodowyINF03-Wyszukiwarka/">Link</a></li>
             <li>NIE używaj tego jako jedynego źródła informacji. Jest tu tylko i wyłącznie opisane to co pojawiło się do tej pory na egzaminach CKE, ale nie ma tutaj żadnych dodatykowych informacji.
             <br>Jeżeli CKE zada coś czego do tej pory nigdy nie było, nie będzie to tutaj opisane. </li>
-            <li>Podaje informacje w taki sposób, aby można było nauczyć się wszystkiego od zera, ale zalecam dowiedzieć się podstaw z innych miejsc, ponieważ nie jestem zbyt dobry w tłumaczeniu czegoś od początku. <br>
-                Nazwał bym to bardziej przypominajką i listą wszystkiego co do tej pory było na egzaminach, a nie wyczerpującym poradnikiem</li>
           <li>Cyfry zapisane na zielono zaznaczają fragmenty kodu by łatwiej przkeazać wiedzę</li>
           <li>Sekcja grafiki jest ważna, pomimo że jest na samym dole cześci praktycznej</li>
         </ul></p>
@@ -70,7 +68,6 @@
 <span class="grn">[4]</span>
 &lt;/<span class="blu">body</span>&gt;
 &lt;/<span class="blu">html</span>&gt;</pre></code>
-
     <p>Tutaj do zdobycią są już dwa darmowe punkty!<br>
         [1] - Zawsze (chyba że arkusz mówi inaczej) należy zamienić "en" na "pl", to ustawi język strony na polski<br>
         [2] - Jest to polski standard kodowania znaków, nie zmieniaj go<br>
@@ -78,9 +75,14 @@
         [4] - Wewnątrz znacznika body zapisujemy wszystko, co chcemy żeby pojawiło sie na stronie
     </p><br>
 <h2>Podstawowe znaczniki</h2>
-<p>Kilka znaczników, bez których nie można prejść dalej. Zachęcam do wypróbowania ich samemu, żeby wyczuć jak działają:</p>
+<p>Kilka znaczników, bez których nie można prejść dalej. Zachęcam do wypróbowania ich samemu, żeby wyczuć jak działają. Krótki pokaz schematu:</p>
 <br>
-<h3>&lt;<span class="blu">p</span>&gt; - paragraf (Paragraph)</h3>
+<h3>&lt;<span class="blu">znacznik</span>&gt; - nazwa polska (nazwa angielska (niepotrzebna))</h3>
+    <p>Krótki opis</p>
+<code><pre>&lt;<span class="blu">znacznik</span>&gt;Przykład użycia&lt;/<span class="blu">znacznik</span>&gt;</pre></code>
+<p>Przykład użycia</p>
+<br>
+<h3>&lt;<span class="blu">p</span>&gt; - paragraf/akapit (Paragraph)</h3>
     <p>Podstawowa forma wyświetlenia tekstu</p>
 <code><pre>&lt;<span class="blu">p</span>&gt;Tekst&lt;/<span class="blu">p</span>&gt;</pre></code>
 <p>Tekst</p>
@@ -121,11 +123,192 @@
     <p><a href="https://google.com">Link</a></p>
     <code><pre>&lt;<span class="blu">a</span> <span class="cyn">href</span>=<span class="org">"plik.html"</span>&gt;Link&lt;/<span class="blu">a</span>&gt;</pre></code>
     <p><a href="plik.html">Link</a>   (ten link odnosi się do pliku znajdującego się w tym samym folderze, co ta strona)</p>
-    <p>Występuje też opcjonalny atrybut target, który decyduje w jaki sposób odnośnik zostanie otwarty. Ustawienie target na _blank sprawi, że link otworzy się w nowej karcie</p>
+    <p>Występuje też opcjonalny atrybut target, który decyduje w jaki sposób odnośnik zostanie otwarty. Ustawienie target na _blank sprawi, że link otworzy się w nowej karcie/osobnym oknie</p>
     <code><pre>&lt;<span class="blu">a</span> <span class="cyn">href</span>=<span class="org">"https://google.com"</span> <span class="cyn">target</span>=<span class="org">"_blank"</span>&gt;Link&lt;/<span class="blu">a</span>&gt;</pre></code>
     <p><a href="https://google.com" target="_blank">Link</a></p>
+<h3>&lt;<span class="blu">h1</span>&gt;...&lt;<span class="blu">h6</span>&gt; - Nagłówek x stopnia (Header)</h3>
+    <p>Zmienia rozmiar tekstu. h1 jest największy, h6 jest najmniejszy, h2-h4 są pomiędzy</p>
+    <code><pre>&lt;<span class="blu">h1</span>&gt;Nagłówek stopnia pierwszego&lt;/<span class="blu">h1</span>&gt;
+&lt;<span class="blu">h2</span>&gt;Nagłówek stopnia drugiego&lt;/<span class="blu">h2</span>&gt;
+&lt;<span class="blu">h3</span>&gt;Nagłówek stopnia trzeciego&lt;/<span class="blu">h3</span>&gt;
+&lt;<span class="blu">p</span>&gt;...&lt;/<span class="blu">p</span>&gt;
+&lt;<span class="blu">h6</span>&gt;Nagłówek stopnia szóstego&lt;/<span class="blu">h6</span>&gt;</pre></code>
+<h1>Nagłówek stopnia pierwszego</h1>
+<h2>Nagłówek stopnia drugiego</h2>
+<h3>Nagłówek stopnia trzeciego</h3>
+<p style="margin-left: 0;">...</p>
+<h6>Nagłówek stopnia szóstego</h6>
+<br>
+<h2>Listy</h2>
+<p>Listy, jak sama nazwa wskazuje, są listami elementów które podamy. Dzieli się je na listy uporządkowane - &lt;<span class="blu">ol</span>&gt;, oraz nieuporządkowane - &lt;<span class="blu">ul</span>&gt;.<br>
+Różnią się one tym, że uporządkowane numerują kolejne elmenty, a nieuporządkowane nie numerują elementów. Same elementy dodaje się znacznikiem &lt;<span class="blu">li</span>&gt; wewnątrz listy.<br>
+Do list nie można dodawać elementów bez znacznika &lt;<span class="blu">li</span>&gt;, ale wewnątrz niego można używać zarówno innych znaczników, jak i kilka znaczników (rzadko używane)<br>
+Można również wkładać listy w listy, nazywa się to listą zagnieżdżoną. Kilka przykładów:</p>
+<code><pre>&lt;<span class="blu">ol</span>&gt;
+    &lt;<span class="blu">li</span>&gt;Element1&lt;/<span class="blu">li</span>&gt;
+    &lt;<span class="blu">li</span>&gt;&lt;<span class="blu">s</span>&gt;Element2&lt;/<span class="blu">s</span>&gt;&lt;/<span class="blu">li</span>&gt;
+    &lt;<span class="blu">li</span>&gt;Element3&lt;/<span class="blu">li</span>&gt;
+&lt;/<span class="blu">ol</span>&gt;</pre></code>
+<ol>
+    <li>Element1</li>
+    <li><s>Element2</s></li>
+    <li>Element3</li>
+</ol>
+<code><pre>&lt;<span class="blu">ul</span>&gt;
+    &lt;<span class="blu">li</span>&gt;&lt;<span class="blu">b</span>&gt;Element1&lt;/<span class="blu">b</span>&gt;&lt;/<span class="blu">li</span>&gt;
+    &lt;<span class="blu">li</span>&gt;&lt;<span class="blu">a</span> <span class="cyn">href</span>=<span class="org">"https://youtube.com"&gt;</span>Element2&lt;/<span class="blu">a</span>&gt;&lt;/<span class="blu">li</span>&gt;
+    &lt;<span class="blu">li</span>&gt;&lt;<span class="blu">abbr</span> <span class="cyn">title</span>=<span class="org">"Test elementu 3"&gt;</span>Element3&lt;/<span class="blu">abbr</span>&gt;&lt;/<span class="blu">li</span>&gt;
+    &lt;<span class="blu">li</span>&gt;Element4&lt;/<span class="blu">li</span>&gt;
+&lt;/<span class="blu">ul</span>&gt;</pre></code>
+<ul>
+    <li><b>Element1</b></li>
+    <li><a href="https://youtube.com">Element2</a></li>
+    <li><abbr title="Test elementu 3">Element3</abbr></li>
+    <li>Element4</li>
+</ul>
+<code><pre>&lt;<span class="blu">ul</span>&gt;
+    &lt;<span class="blu">li</span>&gt;Element1&lt;/<span class="blu">li</span>&gt;
+    &lt;<span class="blu">li</span>&gt;Element2&lt;/<span class="blu">li</span>&gt;
+    &lt;<span class="blu">li</span>&gt; <span class="grn">[1]</span>
+        &lt;<span class="blu">h3</span>&gt;Nadchodzą elementy uporządkowane&lt;/<span class="blu">h3</span>&gt; <span class="grn">[2]</span>
+        &lt;<span class="blu">ol</span>&gt;
+            &lt;<span class="blu">li</span>&gt;ElementUpo1&lt;/<span class="blu">li</span>&gt;
+            &lt;<span class="blu">li</span>&gt;ElementUpo2&lt;/<span class="blu">li</span>&gt;
+            &lt;<span class="blu">li</span>&gt;ElementUpo3&lt;/<span class="blu">li</span>&gt;
+        &lt;/<span class="blu">ol</span>&gt;
+    &lt;/<span class="blu">li</span>&gt; <span class="grn">[1]</span>
+    &lt;<span class="blu">li</span>&gt;Element3&lt;/<span class="blu">li</span>&gt;
+&lt;/<span class="blu">ul</span>&gt;</pre></code>
+<ul>
+    <li>Element1</li>
+    <li>Element2</li>
+    <li>
+        <h3>Nadchodzą elementy uporządkowane</h3>
+        <ol>
+            <li>ElementUpo1</li>
+            <li>ElementUpo2</li>
+            <li>ElementUpo3</li>
+        </ol>
+    </li>
+    <li>Element3</li>
+</ul>
+<p>[1] - Wewnątrz elementu listy dodajemy kolejną listę, tworząc zagnieżdżenie<br>
+   [2] - Do jednego elementu listy możemy dodawać więcej niż jeden znacznik (nie jest to wymogiem dla list zagnieżdżonych)</p>
 
+<h2>Tabele</h2>
+    <p>Tabele są używane do pokazywania informacji w siatce, takie jak np. plany lekcji. Schemat tabel jest podobny do list, ale z kilkoma elementami więcej. Potrzebne znaczniki:<br>
+    &lt;<span class="blu">table</span>&gt; - Tabela (Table)<br>
+    &lt;<span class="blu">tr</span>&gt; - Rząd/Wiersz tabeli (Table Row)<br>
+    &lt;<span class="blu">th</span>&gt; - Nagłówek tabeli (Table Header)<br>
+    &lt;<span class="blu">td</span>&gt; - Komórka tabeli (Table Data)<br>
+    Cała tabela jset zbudowana wewnątrz znacznika &lt;<span class="blu">table</span>&gt;. Buduje się ją rząd po rzędzie, a każdy rząd jest taką jakby listą, <br>
+    czyli wewnątrz znacznika rzędu tabeli &lt;<span class="blu">tr</span>&gt; (ol/ul) wkładamy kolejno komórki tabeli &lt;<span class="blu">td</span>&gt; (li).<br>
+    Jeśli jest to pierwszy rząd, zamiast &lt;<span class="blu">td</span>&gt; możemy użyć nagłówka tabeli &lt;<span class="blu">th</span>&gt;. Kilka przykładów:</p>
+<code><pre>&lt;<span class="blu">table</span>&gt;
+    &lt;<span class="blu">tr</span>&gt;
+        &lt;<span class="blu">th</span>&gt;Nagłówek 1&lt;/<span class="blu">th</span>&gt;
+        &lt;<span class="blu">th</span>&gt;Nagłówek 2&lt;/<span class="blu">th</span>&gt;
+        &lt;<span class="blu">th</span>&gt;Nagłówek 3&lt;/<span class="blu">th</span>&gt;
+    &lt;/<span class="blu">tr</span>&gt;
+    &lt;<span class="blu">tr</span>&gt;
+        &lt;<span class="blu">td</span>&gt;Komórka 1&lt;/<span class="blu">td</span>&gt;
+        &lt;<span class="blu">td</span>&gt;&lt;<span class="blu">b</span>&gt;Komórka 2&lt;/<span class="blu">b</span>&gt;&lt;/<span class="blu">td</span>&gt;
+        &lt;<span class="blu">td</span>&gt;Komórka 3&lt;/<span class="blu">td</span>&gt;
+    &lt;/<span class="blu">tr</span>&gt;
+    &lt;<span class="blu">tr</span>&gt;
+        &lt;<span class="blu">td</span>&gt;&lt;<span class="blu">i</span>&gt;Komórka 4&lt;/<span class="blu">i</span>&gt;&lt;/<span class="blu">td</span>&gt;
+        &lt;<span class="blu">td</span>&gt;Komórka 5&lt;/<span class="blu">td</span>&gt;
+        &lt;<span class="blu">td</span>&gt;&lt;<span class="blu">s</span>&gt;Komórka 6&lt;/<span class="blu">s</span>&gt;&lt;/<span class="blu">td</span>&gt;
+    &lt;/<span class="blu">tr</span>&gt;
+&lt;/<span class="blu">table</span>&gt;</pre></code>
+<table>
+    <tr>
+        <th>Nagłówek 1</th>
+        <th>Nagłówek 2</th>
+        <th>Nagłówek 3</th>
+    </tr>
+    <tr>
+        <td>Komórka 1</td>
+        <td><b>Komórka 2</b></td>
+        <td>Komórka 3</td>
+    </tr>
+    <tr>
+        <td><i>Komórka 4</i></td>
+        <td>Komórka 5</td>
+        <td><s>Komórka 6</s></td>
+    </tr>
+</table>
+<br>
+<code><pre>&lt;<span class="blu">table</span>&gt;
+    &lt;<span class="blu">tr</span>&gt;
+        &lt;<span class="blu">th</span>&gt;Nagłówek 1&lt;/<span class="blu">th</span>&gt;
+        &lt;<span class="blu">th</span>&gt;Nagłówek 2&lt;/<span class="blu">th</span>&gt;
+    &lt;/<span class="blu">tr</span>&gt;
+    &lt;<span class="blu">tr</span>&gt;
+        &lt;<span class="blu">td</span>&gt;Komórka 1&lt;/<span class="blu">td</span>&gt;
+        &lt;<span class="blu">td</span>&gt;Komórka 2&lt;/<span class="blu">td</span>&gt;
+        &lt;<span class="blu">td</span>&gt;Komórka za dużo&lt;/<span class="blu">td</span>&gt;
+    &lt;/<span class="blu">tr</span>&gt;
+    &lt;<span class="blu">tr</span>&gt;
+        &lt;<span class="blu">td</span>&gt;Komórka za mało&lt;/<span class="blu">td</span>&gt;
+    &lt;/<span class="blu">tr</span>&gt;
+&lt;/<span class="blu">table</span>&gt;</pre></code>
+<table>
+    <tr>
+        <th>Nagłówek 1</th>
+        <th>Nagłówek 2</th>
+    </tr>
+    <tr>
+        <td>Komórka 1</td>
+        <td>Komórka 2</td>
+        <td>Komórka za dużo</td>
+    </tr>
+    <tr>
+        <td>Komórka za mało</td>
+    </tr>
+</table>
+<br>
+<p>Jeżeli chcemy, aby jedna komórka zajmowała więcej kolumn/rzędów tabeli (na potrzeby egzaminu nazywa się to scalaniem komórek), używamy atrybutów kolejno <span class="cyn">rowspan</span>/<span class="cyn">colspan</span>. <br>
+    Nie musisz pamiętać które robi co, jak pierwsze będzie źle to drugie musi być dobre. Przykład:</p>
+<code><pre>&lt;<span class="blu">table</span>&gt;
+    &lt;<span class="blu">tr</span>&gt;
+        &lt;<span class="blu">th</span>&gt;Przykładowy tekst&lt;/<span class="blu">th</span>&gt;
+        &lt;<span class="blu">th</span>&gt;Przykładowy tekst&lt;/<span class="blu">th</span>&gt;
+        &lt;<span class="blu">th</span>&gt;Przykładowy tekst&lt;/<span class="blu">th</span>&gt;
+    &lt;/<span class="blu">tr</span>&gt;
+    &lt;<span class="blu">tr</span>&gt;
+        &lt;<span class="blu">td</span>&gt;Komórka&lt;/<span class="blu">td</span>&gt;
+        &lt;<span class="blu">td</span>&gt;Komórka&lt;/<span class="blu">td</span>&gt;
+        &lt;<span class="blu">td</span> <span class="cyn">rowspan</span>=<span class="org">"2"</span>&gt;Komórka trochę wyższa&lt;/<span class="blu">td</span>&gt;
+    &lt;/<span class="blu">tr</span>&gt;
+    &lt;<span class="blu">tr</span>&gt;
+        &lt;<span class="blu">td</span> <span class="cyn">colspan</span>=<span class="org">"2"</span>&gt;Komórka trochę dłuższa&lt;/<span class="blu">td</span>&gt;
+    &lt;/<span class="blu">tr</span>&gt;
+&lt;/<span class="blu">table</span>&gt;</pre></code>
+<table>
+    <tr>
+        <th>Przykładowy tekst</th>
+        <th>Przykładowy tekst</th>
+        <th>Przykładowy tekst</th>
+    </tr>
+    <tr>
+        <td>Komórka</td>
+        <td>Komórka</td>
+        <td rowspan="2">Komórka trochę wyższa</td>
+    </tr>
+    <tr>
+        <td colspan="2">Komórka trochę dłuższa</td>
+    </tr>
+</table>
+<h2>Formularze</h2>
+    <p>Formularze służą do zbierania i wysyłania do innych części strony danych wpisanych przez użytkownika.<br>
+        Jest to razcej najcięższa częśc HTML jeśli chodzi o egzaminy, ale pojawia się co drugi lub trzeci arkusz, więc trzeba to przeboleć.<br>
+    Zacznijmy więc od wpisania znacznika formularza, czyli &lt;<span class="blu">form</span>&gt;.</p>
+<code><pre>&lt;<span class="blu">form</span> <span class="cyn">action</span>=<span class="org">""</span>&gt;&lt;/<span class="blu">form</span>&gt;</pre></code>
+    <p>Visual automatycznie dopisał nam atrybut <span class="cyn">action</span>, który jak narazie usuwamy, przyda się on dopiero przy omawianiu PHP.</p>
+    <form method="get">
+        <input type="text" name="asd" id="asd">
+        <button type="submit">qqqq</button>
+    </form>
 </body>
 </html>
-
-
