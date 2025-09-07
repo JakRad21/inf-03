@@ -10,28 +10,27 @@
     <h1 class="title">Materiały do zdania INF 03</h1>
     <h1>Spis treści</h1>
     <h1>Wprowadzenie</h1>
-    <p>Każdy z potrzebnych języków programowania będzie podzielony na dwie sekcje - fundamenty i rzadsze przypadki. <br>
-        Fundamentami są rzeczy które albo często pojawiają się na egzamnach, albo bez ich zrozumienia nie da się wytłumaczyć rzeczy bardziej złożonych.<br>
-        Rzadsze przypadki to wiedza, która pojawiła się tylko raz lub kilka razy.<br><br>
+    <p>Każdy z potrzebnych języków programowania będzie podzielony na dwie sekcje - fundamenty i wiedzę dodatkową. <br>
+        Fundamenty to prawie kompletne minimum, które pojawiają się często lub rzeczy, bez których wiele ciężej będzie przyswoić poźniejsze tematy.<br>
+        Wewnątrz wiedzy dodatkowej sa części języków programowania, które były widziane tylko kilka razy na egzaminach CKE. Nie oznacza to natomiast że są cięzkie.<Br>
+            Warto jest się ich nauczyć, ponieważ ostatnie sesje egzaminów są wiele cięższe od wszystkich poprzednich<br><br>
         UWAGI:
         <ul>
             <li>Każdy egazmin i jego rozwiązanie jest udostępniane publicznie na githubie Chr1skyy - <a href="https://chr1skyy.github.io/EgzaminZawodowyINF03-Wyszukiwarka/">Link</a></li>
-            <li>NIE używaj tego jako jedynego źródła informacji. Jest tu tylko i wyłącznie opisane to co pojawiło się do tej pory na egzaminach CKE, ale nie ma tutaj żadnych dodatykowych informacji.
-            <br>Jeżeli CKE zada coś czego do tej pory nigdy nie było, nie będzie to tutaj opisane. </li>
-          <li>Cyfry zapisane na zielono zaznaczają fragmenty kodu by łatwiej przkeazać wiedzę</li>
-          <li>Sekcja grafiki jest ważna, pomimo że jest na samym dole cześci praktycznej</li>
+            <li><span class="uwaga">NIE</span> używaj tego jako jedynego źródła informacji. Jest tu tylko i wyłącznie opisane to co pojawiło się do tej pory na egzaminach CKE, ale nie ma tutaj żadnych dodatykowych informacji.
+            <br>Jeżeli CKE zada coś czego do tej pory nigdy nie było, nie będzie to tutaj opisane. Traktuj to bardziej jak zbiór większości informacji a nie poradnik.</li>
+            <li>Nie używaj tego również jako pomocy do lekcji, w wielu miejscach po prostu piszę co trzeba zrobić żeby było zaliczone na egzaminie, a nie jak to działa lub dlaczego.</li>
+            <li>Zakładam że używasz edytora Visual Studio Code, ponieważ jest dostępny podczas egzaminu.</li>
+          <li>Cyfry zapisane na zielono zaznaczają fragmenty kodu, a nie są jego faktyczną częścią.</li>
         </ul></p>
         <h1 class="title">Część praktyczna</h1>
     <h1>Wstęp</h1>
     <p>Kilka uwag specyficznych do części praktycznej. Na napisanie egzaminu jest przenzczone 150 minute (2,5 godziny). <br>
-        Zależnie od wymagań egzaminu, na dole w obramówce jest mała ściąga z języka javascript albo php, oraz cięższych funkcji html i css, jeśli takie wystąpią.<br>
+        Zależnie od wymagań egzaminu, na ostatnich kartkach w obramówce jest mała ściąga z języka javascript albo php, oraz cięższych funkcji html i css, jeśli takie wystąpią.<br>
         Jeśli zapomnisz jak nazywa się jakiś znazcnik bądź komenda, nie panikuj. Visual Studio Code autouzupełnia wszystko co piszesz, <br>
         więc możesz wpisać przykładowo jedna literę, i przeszukiwać listę znaczników na tą literę, dopóki nie znajdziesz tego czego szukasz.<br>
-        Ważne do zapamiętania jest też, że nazwy wszystkiego nie biorą się losowo, tylko z języka angielskiego. Tłumacząc to czego szukasz na angielski i czasami skracanie słow do liter może pomóc w znalezieniu brakującego elementu.<br>
-        Dla przykładu masz zrobić listę uporządkowaną w HTML, ale nie pamiętsz nazw znaczników. Lista uporządkowana to po angielsku "ordered list", robiąc z tego skrót wychodi "ol", <br>
-        co jest nazwą znacznika. Wewnątrz tego potrzebujesz elementów tej listy, więc znowu tłumaczysz element listy na "list element", skracasz do "le", co tym razem nie jest poprawne.<br>
-        Wpisujesz więc samo l do Visuala i szukasz po znacznikach zaczynających się na l. Tam znajdziesz "li", które jest poprawnym znazcnikiem elementu listy.<br>
-        Jeszcze jedną przydatną metodą jest folder contrib (i pare innych plików folderu programu xampp), w którym w plikach .php są małe kawałki kodu, które mogą pomóc jeśli zapomnisz składni języka php albo niektórych znaczników HTML <br>
+        Ważne do zapamiętania jest też, że nazwy wszystkiego nie biorą się losowo, tylko są to zazwyczaj skrócone lub pełne słowa języka angielskiego. Może ułatwić ci to przyszłe szukanie.<br>
+        Jeszcze jednym przydatnym miejscem jest folder contrib (i pare innych plików folderu programu xampp), w którym w plikach .php są małe kawałki kodu, które mogą pomóc jeśli zapomnisz składni języka php albo niektórych znaczników HTML <br>
     </p>
     <h1>HTML - fundamenty</h1>
     <h2>Wstęp</h2>
@@ -62,7 +61,7 @@
 &lt;<span class="blu">head</span>&gt;
     &lt;<span class="blu">meta</span> <span class="cyn">charset</span>=<span class="org">"UTF-8"</span>&gt; <span class="grn">[2]</span>
     &lt;<span class="blu">meta</span> <span class="cyn">name</span>=<span class="org">"viewport"</span> <span class="cyn">content</span>=<span class="org">"width=device-width, initial-scale=1.0"</span>&gt;
-    &lt;<span class="blu">title</span>&gt;Document&lt;/<span class="blu">/title</span>&gt; <span class="grn">[3]</span>
+    &lt;<span class="blu">title</span>&gt;Document&lt;/<span class="blu">title</span>&gt; <span class="grn">[3]</span>
 &lt;/<span class="blu">head</span>&gt;
 &lt;<span class="blu">body</span>&gt;
 <span class="grn">[4]</span>
@@ -118,6 +117,7 @@
 <p>Ten tekst jest <s>przekreślony</s></p>
 <br>
 <h3>&lt;<span class="blu">a</span>&gt; - odnośnik (Anchor)</h3>
+    <p><span class="uwaga">UWAGA</span> - odnośniki, obrazy i video używają linków do stron internetowych lub ścieżek do pliku. Poradnik jak nawigować po plikach w HTML znajduje się <a href="https://www.w3schools.com/Html/html_filepaths.asp"><span class="blu">tutaj</span></a></p>
     <p>Tworzy odnośnik do strony internetowej lub pliku na systemie. Ten znacznik musi posiadać atrybut href, który wskazuje gdzie odnośnik prowadzi.</p>
     <code><pre>&lt;<span class="blu">a</span> <span class="cyn">href</span>=<span class="org">"https://google.com"</span>&gt;Link&lt;/<span class="blu">a</span>&gt;</pre></code>
     <p><a href="https://google.com">Link</a></p>
@@ -194,7 +194,18 @@ Można również wkładać listy w listy, nazywa się to listą zagnieżdżoną.
 </ul>
 <p>[1] - Wewnątrz elementu listy dodajemy kolejną listę, tworząc zagnieżdżenie<br>
    [2] - Do jednego elementu listy możemy dodawać więcej niż jeden znacznik (nie jest to wymogiem dla list zagnieżdżonych)</p>
-
+<br>
+<h2>Obrazy</h2>
+<p>Obrazy na stronie wyświetla się znazcnikiem &lt;<span class="blu">img</span>&gt;, którego się nie zamyka. Po wpisaniu go automatycznie wyświetli się nam:</p>
+<code><pre>&lt;<span class="blu">img</span> <span class="cyn">src</span>=<span class="org">""</span> <span class="cyn">alt</span>=<span class="org">""</span>&gt;</pre></code>
+<p>Pokazują nam się dwa atrybuty. Pierwszy z nich, czyli src, jest źrodłem z którego ma byc pobrany obraz. Może to być plik na komputerze albo link do obrazu z internetu.<br>
+alt natomiast jest to tekst alternatywny, który wyświetla się jeżeli przeglądarce nie uda się załadować obrazu.</p>
+<code><pre>&lt;<span class="blu">img</span> <span class="cyn">src</span>=<span class="org">"https://ujeb.link/sweterstock"</span> <span class="cyn">alt</span>=<span class="org">"Random w swetrze"</span>&gt;</pre></code>
+<img src="https://ujeb.link/sweterstock" alt="Random w swetrze" width="600" height="450">
+<p>Pobiera link z internetu</p>
+<code><pre>&lt;<span class="blu">img</span> <span class="cyn">src</span>=<span class="org">"jakisobraz.png"</span> <span class="cyn">alt</span>=<span class="org">"Nie załadowano obrazu"</span>&gt;</pre></code>
+<img src="jakisobraz.png" alt="Nie załadowano obrazu">
+<p>W tym wypadku obraz nie został załadowany, ponieważ plik jakisobraz.png nie istnieje w tym samym folderze co strona</p>
 <h2>Tabele</h2>
     <p>Tabele są używane do pokazywania informacji w siatce, takie jak np. plany lekcji. Schemat tabel jest podobny do list, ale z kilkoma elementami więcej. Potrzebne znaczniki:<br>
     &lt;<span class="blu">table</span>&gt; - Tabela (Table)<br>
@@ -300,15 +311,244 @@ Można również wkładać listy w listy, nazywa się to listą zagnieżdżoną.
         <td colspan="2">Komórka trochę dłuższa</td>
     </tr>
 </table>
-<h2>Formularze</h2>
+<br><br>
+
+<h1>Formularze</h1>
     <p>Formularze służą do zbierania i wysyłania do innych części strony danych wpisanych przez użytkownika.<br>
         Jest to razcej najcięższa częśc HTML jeśli chodzi o egzaminy, ale pojawia się co drugi lub trzeci arkusz, więc trzeba to przeboleć.<br>
     Zacznijmy więc od wpisania znacznika formularza, czyli &lt;<span class="blu">form</span>&gt;.</p>
 <code><pre>&lt;<span class="blu">form</span> <span class="cyn">action</span>=<span class="org">""</span>&gt;&lt;/<span class="blu">form</span>&gt;</pre></code>
     <p>Visual automatycznie dopisał nam atrybut <span class="cyn">action</span>, który jak narazie usuwamy, przyda się on dopiero przy omawianiu PHP.</p>
-    <form method="get">
-        <input type="text" name="asd" id="asd">
-        <button type="submit">qqqq</button>
-    </form>
+<h2>Wpisywanie danych do formularza</h2>
+    <p>Robi się to na kilka sposobów, ale najważniejszym i najczęstszym jest znazcnik &lt;<span class="blu">input</span>&gt; (nie zamykamy znaczników input).<br>
+    Inputy dzielą się na typy, które definiują jak się zachowują i jakie dane można w nie wpisać, przykładami jest text, number, checkbox, color itd.<br>
+    Żeby zobaczyć wszystkie typy inputów, wspisz w Visualu "input:", nie muszisz więc pamiętać ich nazw, tylko ich działanie. Po zatwierdzeniu "input:text" pokazuje nam sie:</p>
+<code><pre>&lt;<span class="blu">input</span> <span class="cyn">type</span>=<span class="org">"text"</span> <span class="cyn">name</span>=<span class="org">""</span> <span class="cyn">id</span>=<span class="org">""</span>&gt;</pre></code>
+<input type="text" name="" id="">
+    <p>Tworzy to podstawowe pole edycyjne, do którego możemy coś wpisać. Automatycznie pokazuje nam się dużo atrybutów, więc wyjaśniając po kolei:</p>
+    <ul>
+        <li><span class="cyn">type</span> - wcześniej opisany typ</li>
+        <li><span class="cyn">name</span> - nazwa pola, najlepiej adekwatna do tego co będzie w nim wpisywane</li>
+        <li><span class="cyn">id</span> - jak narazie możesz usunąc, będzie to opisane później</li>
+    </ul>
+        <p>Kilka mniej oczywistych typów inputów i ich działanie lub dodatkowe funkcje</p>
+<h3>Checkbox</h3>
+<code><pre>&lt;<span class="blu">input</span> <span class="cyn">type</span>=<span class="org">"checkbox"</span>&gt;</pre></code>
+<input type="checkbox">
+<p>Przechowuje wartośc prawda/fałsz. Opcjonalnie można dodac atrybut <span class="cyn">checked</span> bez wartości, żeby pole automatycznie było zaznaczone</p>
+<code><pre>&lt;<span class="blu">input</span> <span class="cyn">type</span>=<span class="org">"checkbox"</span> <span class="cyn">checked</span>&gt;</pre></code>
+<input type="checkbox" checked>
+<br>
+<h3>Radio</h3>
+<p>Działa podobnie jak checkbox, ale można wybrać tylko jeden input radio z tym samym imieniem. Atrybut value przechowuje jaką wiadomość prześle formularz.</p>
+<code><pre>&lt;<span class="blu">ol</span>&gt;
+    &lt;<span class="blu">li</span>&gt;&lt;<span class="blu">input</span> <span class="cyn">type</span>=<span class="org">"radio"</span> <span class="cyn">name</span>=<span class="org">"test"</span> <span class="cyn">value</span>=<span class="org">"Wybrano opcje 1"</span>&gt; Opcja 1&lt;/<span class="blu">li</span>&gt;
+    &lt;<span class="blu">li</span>&gt;&lt;<span class="blu">input</span> <span class="cyn">type</span>=<span class="org">"radio"</span> <span class="cyn">name</span>=<span class="org">"test"</span> <span class="cyn">value</span>=<span class="org">"Wybrano opcje 2"</span>&gt; Opcja 2&lt;/<span class="blu">li</span>&gt;
+    &lt;<span class="blu">li</span>&gt;&lt;<span class="blu">input</span> <span class="cyn">type</span>=<span class="org">"radio"</span> <span class="cyn">name</span>=<span class="org">"test"</span> <span class="cyn">value</span>=<span class="org">"Wybrano opcje 3"</span>&gt; Opcja 3&lt;/<span class="blu">li</span>&gt;
+&lt;/<span class="blu">ol</span>&gt;</pre></code>
+<ol>
+    <li><input type="radio" name="test" value="Wybrano opcje 1"> Opcja 1</li>
+    <li><input type="radio" name="test" value="Wybrano opcje 2"> Opcja 2</li>
+    <li><input type="radio" name="test" value="Wybrano opcje 3"> Opcja 3</li>
+</ol>
+<p>Tutaj też działa atrybut <span class="cyn">checked</span></p>
+<pre><code>&lt;<span class="blu">p</span>&gt;&lt;<span class="blu">input</span> <span class="cyn">type</span>=<span class="org">"radio"</span> <span class="cyn">name</span>=<span class="org">"zgoda"</span> <span class="cyn">value</span>=<span class="org">"Tak"</span> <span class="cyn">checked</span>&gt; Zgadzam się&lt;/<span class="blu">p</span>&gt;
+&lt;<span class="blu">p</span>&gt;&lt;<span class="blu">input</span> <span class="cyn">type</span>=<span class="org">"radio"</span> <span class="cyn">name</span>=<span class="org">"zgoda"</span> <span class="cyn">value</span>=<span class="org">"Nie"</span>&gt; Nie zgadzam się&lt;/<span class="blu">p</span>&gt;</pre></code>
+<p><input type="radio" name="zgoda" value="Tak" checked> Zgadzam się</p>
+<p><input type="radio" name="zgoda" value="Nie"> Nie zgadzam się</p>
+<br>
+<h3>Range</h3>
+<p>Daje możliwość wybrania liczby z zakresu przy użyciu suwaka<br>
+Ten input ma kilka unikalnych atrybutów, które dzieli tylko z inputem typu numerycznego (number) i daty (date), a są to:</p>
+<ul>
+    <li><span class="cyn">min</span> - ustawia minimalną wartość (domyślnie 0)</li>
+    <li><span class="cyn">max</span> - ustawia maksymalną wartość (domyślnie 100)</li>
+    <li><span class="cyn">step</span> - ustawia odległośc między dostępnymi liczbami (na przykład jeśli step jest równe 3, wybrać można tylko co trzecią liczbę na suwaku)</li>
+</ul>
+<code><pre>&lt;<span class="blu">input</span> <span class="cyn">type</span>=<span class="org">"range"</span>&gt;</pre></code>
+<input type="range">
+<code><pre>&lt;<span class="blu">p</span>&gt;0 &lt;<span class="blu">input</span> <span class="cyn">type</span>=<span class="org">"range"</span> <span class="cyn">min</span>=<span class="org">"0"</span> <span class="cyn">max</span>=<span class="org">"14"</span> <span class="cyn">step</span>=<span class="org">"2"</span>&gt; 14&lt;/<span class="blu">p</span>&gt;</pre></code>
+<p>0 <input type="range" min="0" max="14" step="2"> 14</p>
+<br>
+<h3>Kilka typów inputów bez unikatowych funkcji</h3>
+<ul>
+    <li>password - używany do zapisywania haseł <input type="password"></li>
+    <li>email - używany do zapisywania adresu email <input type="email"></li>
+    <li>tel - używany do zapisywania numeru telefonu <input type="tel"></li>
+    <li>date - używany do wybrania daty <input type="date"></li>
+    <li>color - używany do wybrania koloru <input type="color"></li>
+</ul>
+<br>
+<h3>Dodatkowe atrybuty inputów</h3>
+<p>(Inputy tekstowe to takie, do których są wpisywane litery bądź cyfry, czyli np. text, number, password, email, tel itd.)</p>
+<ul>
+    <li>disabled - uniemożliwia edycje inputu <input type="text" disabled></li>
+    <li>required - uniemożliwia wysłanie formularza bez wypełnienia tego pola (będzie wyjaśnione później) <input type="text" required></li>
+    <li>value (poza checkbox/radio) - ustawia domyślną wartość <input type="text" value="wartość domyślna"></li>
+    <li>placeholder (tylko inputy tekstowe) - ustawia podpowiedź, która pojawia się jeżeli nie jest wpisana żadna wartość <input type="text" placeholder="/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\"></li>
+    <li>minlength/maxlength (tylko inputy tekstowe) - ustawia minimalną lub maksymalną ilośc znaków jaką można wpisać <input type="text" maxlength="3" placeholder="limit 3 znaków"></li>
+</ul>
+<br>
+<h2>Inny sposób wpisywania danych</h2>
+<h3>&lt;<span class="blu">select</span>&gt; - lista wyboru</h3>
+<p>Select zapisuje się podobnie do list, a używa się go do wybrania jednej wartości spośród listy. Podążając tą alegorią, wewnątrz naszej listy select, elementami listy są znaczniki &lt;<span class="blu">option</span>&gt;.<br>Wartość przesłaną, podobnie jak w inpucie typu radio zapisuje się w atrybucie <span class="cyn">value</span><br>
+<span class="uwaga">UWAGA</span> - bardzo częstym błędem jest założenie, że tekst wewnątrz znacznika option jest wartością przesyłaną przez formularz, natomiast jest to tylko tekst ozdobny.<br>
+Prawdziwa wartość wysyłana jest zapisana w atrybucie <span class="cyn">value</span>. Dla ułatwienia w przyszłości będę się odnosił do selecta jako rodzaju inputa. Przykład:</p>
+<code><pre>&lt;<span class="blu">select</span> <span class="cyn">name</span>=<span class="org">"wybor"</span>&gt;
+    &lt;<span class="blu">option</span> <span class="cyn">value</span>=<span class="org">"wartosc1"</span>&gt;Opcja 1&lt;/<span class="blu">option</span>&gt;
+    &lt;<span class="blu">option</span> <span class="cyn">value</span>=<span class="org">"wartosc2"</span>&gt;Opcja 2&lt;/<span class="blu">option</span>&gt;
+    &lt;<span class="blu">option</span> <span class="cyn">value</span>=<span class="org">"wartosc3"</span>&gt;Opcja 3&lt;/<span class="blu">option</span>&gt;
+    &lt;<span class="blu">option</span> <span class="cyn">value</span>=<span class="org">"wartosc4"</span>&gt;Opcja 4&lt;/<span class="blu">option</span>&gt;
+&lt;/<span class="blu">select</span>&gt;</pre></code>
+<select name="wybor">
+    <option value="wartosc1">Opcja 1</option>
+    <option value="wartosc2">Opcja 2</option>
+    <option value="wartosc3">Opcja 3</option>
+    <option value="wartosc4">Opcja 4</option>
+</select>
+<h2>Podpisywanie inputów</h2>
+<p>Rzadko spotkamy się z sytuacją, kiedy input nie ma być w żaden sposób podpisany. Do tego używa się znacznika &lt;<span class="blu">label</span>&gt; (formalnie etykieta)</p>
+<code><pre>&lt;<span class="blu">label</span>&gt; <span class="cyn">for</span>=<span class="org">""</span>&gt;&lt;/<span class="blu">label</span>&gt;</pre></code>
+<p>Tego znacznika używa się, gdy arkusz prosi o coś typu "Pole edycyjne przeznaczone do ..., poprzedzone etykietą '...' ".<br>
+Etykiet można poprawnie używać na dwa sposoby, który wybierzesz zależy głównie od preferencji, ponieważ obydwoma sposobami można osiągnąć to samo.</p>
+    <p>1 - połączenie atrybutu <span class="cyn">for</span> z atrybutem <span class="cyn">id</span> inputu<br>
+    W tym wypadku w końcu używamy poprzednio usuwanego atrybutu <span class="cyn">id</span> w każdym inpucie jaki wpisujemy. Ustawiamy taką samą wartość <span class="cyn">id</span> w inpucie, co <span class="cyn">for</span> w etykiecie.<br>
+Połączy to jedno z drugim. Należy pamiętać, że w takim wypadku należy usatwić etykietę nad lub pod inputem</p>
+<code><pre>&lt;<span class="blu">label</span> <span class="cyn">for</span>=<span class="org">"imie"</span>&gt;Imię&lt;/<span class="blu">label</span>&gt;
+&lt;<span class="blu">input</span> <span class="cyn">type</span>=<span class="org">"text"</span> <span class="cyn">name</span>=<span class="org">"imie"</span> <span class="cyn">id</span>=<span class="org">"imie"</span> <span class="cyn">placeholder</span>=<span class="org">"Podaj imię"</span>&gt;
+&lt;<span class="blu">br</span>&gt;
+&lt;<span class="blu">input</span> <span class="cyn">type</span>=<span class="org">"text"</span> <span class="cyn">name</span>=<span class="org">"nazwisko"</span> <span class="cyn">id</span>=<span class="org">"nazwisko"</span> <span class="cyn">placeholder</span>=<span class="org">"Podaj nazwisko"</span>&gt;
+&lt;<span class="blu">label</span> <span class="cyn">for</span>=<span class="org">"nazwisko"</span>&gt;Nazwisko&lt;/<span class="blu">label</span>&gt;</pre></code>
+<label for="imie">Imię</label>
+<input type="text" name="imie" id="imie" placeholder="Podaj imię">
+<br>
+<input type="text" name="nazwisko" id="nazwisko" placeholder="Podaj nazwisko">
+<label for="nazwisko">Nazwisko</label>
+<p>2 - Wpisanie inputa wewnątrz etykiety<br>
+Jest to mniej skomplikowany sposób, ale może wyglądać mniej czytelnie wewnątrz kodu oraz być cięższy do modyfikowania, jeżeli arkusz będzie tego wymagać.</p>
+<code><pre>&lt;<span class="blu">label</span>&gt;
+    Imię
+    &lt;<span class="blu">input</span> <span class="cyn">type</span>=<span class="org">"text"</span> <span class="cyn">name</span>=<span class="org">"imie"</span> <span class="cyn">placeholder</span>=<span class="org">"Podaj imię"</span>&gt;
+&lt;/<span class="blu">label</span>&gt;
+&lt;<span class="blu">br</span>&gt;
+&lt;<span class="blu">label</span>&gt;
+    &lt;<span class="blu">input</span> <span class="cyn">type</span>=<span class="org">"text"</span> <span class="cyn">name</span>=<span class="org">"nazwisko"</span> <span class="cyn">placeholder</span>=<span class="org">"Podaj nazwisko"</span>&gt;
+    Nazwisko
+&lt;/<span class="blu">label</span>&gt;</pre></code>
+<label>
+    Imię
+    <input type="text" name="imie" placeholder="Podaj imię">
+</label>
+<br>
+<label>
+    <input type="text" name="nazwisko" placeholder="Podaj nazwisko">
+    Nazwisko
+</label>
+<h2>Wysyłanie formularza</h2>
+<p>Najprostsza część formularzy, tworzymy przycisk wysyłania wpisując "button:submit". Jeżeli mamy do zrobienia guzik wyczysczający/resetujący pola, wpisujemy "button:reset".<br>
+Wewnątrz zncznika zapisujemy jaki napis ma się wyświetlić na guziku.</p>
+<code><pre>&lt;<span class="blu">form</span>&gt;
+    &lt;<span class="blu">input</span> <span class="cyn">type</span>=<span class="org">"text"</span> <span class="cyn">name</span>=<span class="org">"przyklad"</span>&gt;
+    &lt;<span class="blu">button</span> <span class="cyn">type</span>=<span class="org">"reset"</span>&gt;Wyczyść&lt;/<span class="blu">button</span>&gt;
+&lt;/<span class="blu">form</span>&gt;</pre></code>
+<form>
+    <input type="text" name="przyklad">
+    <button type="reset">Wyczyść</button>
+</form>
+<h2>Gotowy formularz</h2>
+<p>Łącząc wszystkie elementy formularzy, możemy teraz utworzyć pełny przykładowy formularz. (nie robi on jeszcze nic, ponieważ tym dopiero zajmiemy się podczas przerabiana PHP)</p>
+<code><pre>&lt;<span class="blu">form</span>&gt; <span class="grn">[1]</span>
+    &lt;<span class="blu">label</span> <span class="cyn">for</span>=<span class="org">"imie"</span>&gt;Imię&lt;/<span class="blu">label</span>&gt;
+    &lt;<span class="blu">input</span> <span class="cyn">type</span>=<span class="org">"text"</span> <span class="cyn">name</span>=<span class="org">"imie"</span><span class="cyn"> id</span>=<span class="org">"imie"</span> <span class="cyn">placeholder</span>=<span class="org">"..."</span>&gt;&lt;<span class="blu">br</span>&gt; <span class="grn">[2]</span>
+    &lt;<span class="blu">label</span> <span class="cyn">for</span>=<span class="org">"nazwisko"</span>&gt;Nazwisko&lt;/<span class="blu">label</span>&gt;
+    &lt;<span class="blu">input</span> <span class="cyn">type</span>=<span class="org">"text"</span> <span class="cyn">name</span>=<span class="org">"nazwisko"</span><span class="cyn"> id</span>=<span class="org">"nazwisko"</span> <span class="cyn">placeholder</span>=<span class="org">"..."</span>&gt;&lt;<span class="blu">br</span>&gt;
+    &lt;<span class="blu">label</span> <span class="cyn">for</span>=<span class="org">"pesel"</span>&gt;Numer PESEL&lt;/<span class="blu">label</span>&gt;
+    &lt;<span class="blu">input</span> <span class="cyn">type</span>=<span class="org">"number"</span> <span class="cyn">name</span>=<span class="org">"pesel"</span><span class="cyn"> id</span>=<span class="org">"pesel"</span> <span class="cyn">minlength</span>=<span class="org">"11"</span> <span class="cyn">maxlength</span>=<span class="org">"11"</span>&gt;&lt;<span class="blu">br</span>&gt;
+    &lt;<span class="blu">label</span> <span class="cyn">for</span>=<span class="org">"data"</span>&gt;Data urodzenia&lt;/<span class="blu">label</span>&gt;
+    &lt;<span class="blu">input</span> <span class="cyn">type</span>=<span class="org">"data"</span> <span class="cyn">name</span>=<span class="org">"data"</span><span class="cyn"> id</span>=<span class="org">"data"</span>&gt;&lt;<span class="blu">br</span>&gt;
+    &lt;<span class="blu">label</span> <span class="cyn">for</span>=<span class="org">"plec"</span>&gt;Płeć&lt;/<span class="blu">label</span>&gt;
+    &lt;<span class="blu">select</span> <span class="cyn">name</span>=<span class="org">"plec"</span> <span class="cyn">id</span>=<span class="org">"plec"</span>&gt;&lt;<span class="blu">br</span>&gt;
+        &lt;<span class="blu">option</span> <span class="cyn">value</span>=<span class="org">"M"</span>&gt;Mężczyzna&lt;/<span class="blu">option</span>&gt;
+        &lt;<span class="blu">option</span> <span class="cyn">value</span>=<span class="org">"K"</span>&gt;Kobieta&lt;/<span class="blu">option</span>&gt;
+        &lt;<span class="blu">option</span> <span class="cyn">value</span>=<span class="org">"I"</span>&gt;Inne&lt;/<span class="blu">option</span>&gt;
+    &lt;/<span class="blu">select</span>&gt;&lt;<span class="blu">br</span>&gt;
+    &lt;<span class="blu">label</span> <span class="cyn">for</span>=<span class="org">"zgoda"</span>&gt;Akceptuje regulamin serwisu &lt;/<span class="blu">label</span>&gt;
+    &lt;<span class="blu">input</span> <span class="cyn">type</span>=<span class="org">"checkbox"</span> <span class="cyn">name</span>=<span class="org">"zgoda"</span><span class="cyn"> id</span>=<span class="org">"zgoda"</span>&gt;&lt;<span class="blu">br</span>&gt;
+    &lt;<span class="blu">label</span> <span class="cyn">for</span>=<span class="org">"newsletter"</span>&gt;Chcę otrzymywać tygodniowe informacje reklamowe &lt;/<span class="blu">label</span>&gt;
+    &lt;<span class="blu">input</span> <span class="cyn">type</span>=<span class="org">"checkbox"</span> <span class="cyn">name</span>=<span class="org">"newsletter"</span><span class="cyn"> id</span>=<span class="org">"newsletter"</span> <span class="cyn">checked</span>&gt;&lt;<span class="blu">br</span>&gt;
+    &lt;<span class="blu">button</span> <span class="cyn">type</span>=<span class="org">"submit"</span>&gt;Wyślij&lt;/<span class="blu">button</span>&gt; <span class="grn">[3]</span>
+    &lt;<span class="blu">button</span> <span class="cyn">type</span>=<span class="org">"reset"</span>&gt;Wyczyść&lt;/<span class="blu">button</span>&gt;
+&lt;/<span class="blu">form</span>&gt;</pre></code>
+<form>
+    <label for="imie">Imię</label>
+    <input type="text" name="imie" id="imie" placeholder="..."><br>
+    <label for="nazwisko">Nazwisko</label>
+    <input type="text" name="nazwisko" id="nazwisko" placeholder="..."><br>
+    <label for="pesel">Numer PESEL</label>
+    <input type="number" name="pesel" id="pesel" minlength="11" maxlength="11"><br>
+    <label for="data">Data urodzenia</label>
+    <input type="data" name="data" id="data"><br>
+    <label for="plec">Płeć</label>
+    <select name="plec" id="plec"><br>
+        <option value="M">Mężczyzna</option>
+        <option value="K">Kobieta</option>
+        <option value="I">Inne</option>
+    </select><br>
+    <label for="zgoda">Akceptuje regulamin serwisu </label>
+    <input type="checkbox" name="zgoda" id="zgoda"><br>
+    <label for="newsletter">Chcę otrzymywać tygodniowe informacje reklamowe </label>
+    <input type="checkbox" name="newsletter" id="newsletter" checked><br>
+    <button type="button">Wyślij</button>
+    <button type="reset">Wyczyść</button>
+<p>[1] - Formularze odnoszą się tylko do tego, co jest wewnątrz znacznika &lt;<span class="blu">form</span>&gt;. Oznacza to że np. guziki wewnątrz tego formularza nie przślą/wyczyszczą danych z innego formularza.<br>
+[2] - atrybut <span class="cyn">name</span> oraz <span class="cyn">id</span> nie muszą być takie same, ale jest to prosty sposób na ułatwienie programowania strony.<br>
+[3] - W działającym przykładzie atrybut <span class="cyn">type</span> pierwszego guzika został zmieniony na <span class="org">"button"</span>, aby nie wysyłał formularza. Odświeżyłoby to stronę, a na potrzeby przykładu nie jest to potrzebne</p>
+</form>
+<br>
+<h1>Znaczniki semantyczne</h1>
+<h2>Czym są?</h2>
+<p>W skrócie znaczniki semantyczne (na egzaminie mogą być nazwane znacznikami sekcji) to znaczniki, które nie robią nic poza przechowywaniem innych znaczników. <br>
+To nimi właśnie wskazuje się strukturę strony (czyli podział strony na nagłówki, bloki, stopki itd.). Jest to niestety do wyuczenia się na pamięć:</p>
+<ul>
+    <li>&lt;<span class="blu">header</span>&gt; - nagłówek strony</li>
+    <li>&lt;<span class="blu">nav</span>&gt; - menu nawigacyjne</li>
+    <li>&lt;<span class="blu">footer</span>&gt; - stopka strony (sam dół)</li>
+    <li>&lt;<span class="blu">main</span>&gt; - główna część strony (używaj jeśli na arkuszu jest tylko jeden blok główny)</li>
+    <li>&lt;<span class="blu">section</span>&gt; - sekcja strony (używaj jeśli na arkuszy jest więcej niż jeden blok główny, np. lewy i prawy)</li>
+    <li>&lt;<span class="blu">aside</span>&gt; - blok boczny (używany zazwyczaj razem z main)</li>
+    <li>&lt;<span class="blu">article</span>&gt; - artykuł strony</li>
+    <li>&lt;<span class="blu">form</span>&gt; - blok formularza</li>
+    <li>&lt;<span class="blu">div</span>&gt; - blok dowolny (dobry do np. kontenerów, używaj tylko jeśli arkusz nie określi rodzaju bloku i jesteś pewny, że nie ma na myśli nic innego)</li>
+</ul>
+<p>Nie ma w nich nic unikatowego, różnią się tylko nazwą, ale egazmin wymaga używania ich poprawnie.</p>
+<br>
+<h1>HTML - wiedza dodatkowa</h1>
+<p>Nie ma tutaj dużo rzeczy, ponieważ HTML nie ma zbytnio mało używanych funkcji. Trudność polega na tym, że prawie każdy kolejny język w jakiś sposób używa lub zmienia kod HTML, więc trzeba znać go bardzo dobrze</p>
+<h3>&lt;<span class="blu">video</span>&gt; - Wyświetlanie filmików</h3>
+<p>Koncepcyjnie podobny do &lt;<span class="blu">img</span>&gt;, w sensie takim, że bierzemy źródło filmy, a w razie jego braku pokazujemy tekst błędu. Tutaj jest to jednak robione lekko inaczej.<br>
+Wewnątrz znacznika &lt;<span class="blu">video</span>&gt; wstawiamy po kolei jeden lub więcej znaczników &lt;<span class="blu">source</span>&gt;, wewnątrz których atrybut <span class="cyn">src</span> definiuje ścieżkę do filmu.<br>
+&lt;<span class="blu">source</span>&gt; potrzebuje też atrybutu <span class="cyn">type</span>, który wskazuje rozszerzenie filmu. Wewnątrz &lt;<span class="blu">video</span>&gt; kod próbuje załadować pliki od góry do dołu, <br>
+jeżeli więc film nie załaduje się z bylejakiego powodu, spróbuje załadować film wskazany linijke niżej, albo jeśli nie obsługuje formatu pliku, wyświetli tekst zapisany na dole. Przykład:</p>
+<code><pre>&lt;<span class="blu">video</span>&gt;
+    &lt;<span class="blu">source</span> <span class="cyn">src</span>=<span class="org">"film.mp4"</span> <span class="cyn">type</span>=<span class="org">"video/mp4"</span>&gt;
+    Nie udało się wyświetlić flimu.
+&lt;/<span class="blu">video</span>&gt;</pre></code>
+<p>Nie wyświetla się nic, ponieważ przeglądarka jest w stanie odtworzyć pliki mp4, więc nie jest wyświetlany błąd. Natomiast film.mp4 nie istnieje, więc on też nie jest wyświetlany.</p>
+<p>Ważne atrybuty unikatowe do &lt;<span class="blu">video</span>&gt;</p>
+<ul>
+    <li><span class="cyn">autoplay</span> - automatycznie uruchamia film po załadowaniu strony</li>
+    <li><span class="cyn">loop</span> - zapętla film po zakończeniu</li>
+    <li><span class="cyn">controls</span> - dodaje kontrolki do filmu takie jak guzik pauzy lub przewijania</li>
+    <li><span class="cyn">muted</span> - film ładuje się wyciszony</li>
+</ul>
+<h3>Rozszerzenie formularzy - &lt;<span class="blu">textarea</span>&gt;</h3>
+<p>Jest to trzeci sposób na wpisywanie danych do formularza. Jest prawie identyczny do inputu typu tekstowego, ale jest przeznaczony na długie wiadomości.<br>
+Jego wielkośc definiuje się atrybutami <span class="cyn">rows</span> oraz <span class="cyn">cols</span> (liczone w znakach, nie pikselach).</p>
+<code><pre>&lt;<span class="blu">textarea</span> <span class="cyn">rows</span>=<span class="org">"32"</span> <span class="cyn">cols</span>=<span class="org">"5"</span>&gt;&lt;/<span class="blu">textarea</span>&gt;</pre></code>
+<textarea rows="5" cols="32"></textarea>
+<h3>Ustawianie ikonki w karcie przeglądarki</h3>
+<p>Do znacznika &lt;<span class="blu">head</span>&gt; naszej strony dodajemy linijke</p>
+<code><pre>&lt;<span class="blu">link</span> <span class="cyn">rel</span>=<span class="org">"icon"</span> <span class="cyn">href</span>=<span class="org">""</span>&gt;</pre></code>
+<p>Jako wartość href ustawiamy ścieżke do naszej ikonki</p>
 </body>
 </html>
