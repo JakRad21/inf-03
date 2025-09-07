@@ -12,7 +12,7 @@ body{
 p{
     margin-left: 12px;
 }
-p, li, code{
+p, li, code, input, select, textarea{
     font-size: 13pt;
 }
 pre, code, html, span{
@@ -25,8 +25,18 @@ table, tr, th, td{
 td, th{
     padding: 5px;
 }
-table{
+table, img{
     margin-top: 2vh;
+}
+button{
+    background-color: #2f3c50;
+    border: 2px solid black;
+}
+input, select, textarea{
+    margin-top: 2vh;
+    border: 2px solid #000000;
+    background-color: #2a4e80;
+    color: white;
 }
 pre{
     font-family: Consolas, 'Courier New', monospace;
@@ -39,6 +49,11 @@ pre{
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
     background-color: #212a37;
+}
+.uwaga{
+    color: red;
+    font-weight: 800;
+    text-decoration: double;
 }
 .blu{
     color: #3a8cd6;
